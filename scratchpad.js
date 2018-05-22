@@ -7,26 +7,24 @@
  * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
  */
 
-var answer = prompt("What is the capital of France?");
 
-if(answer === "Paris"){
-  alert("You are correct!");
+var randomNumber = Math.round( Math.random() * 15);
+//var randomNumber = 0;
+
+if(randomNumber%3 === 0 && randomNumber != 0){
+  if(randomNumber%5 === 0){
+    alert("fizzbuzz");
+  }
+  else {
+    alert("fizz")
+  }
 }
-else if(answer === "paris"){
-  alert("You are correct!");
+else if(randomNumber%5 === 0 && randomNumber != 0){
+  alert("buzz")
 }
 else {
-  alert("Sorry," + " " + answer + " " + "is not correct");
+  console.log(randomNumber);
 }
 
-var favouriteAnimal = prompt("What's your favourite animal?");
 
-if(favouriteAnimal === "Dog"){
-  alert("Dogs are the one!");
-}
-else if(favouriteAnimal === "Cat"){
-  alert("You kidding?");
-}
-else {
-  alert("meh");
-}
+
